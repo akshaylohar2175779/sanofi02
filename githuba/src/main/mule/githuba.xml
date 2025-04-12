@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="githubaFlow" doc:id="00d87f10-0e67-4671-b773-c6ba31f10ecf" >
+		<scheduler doc:name="Scheduler" doc:id="1c344007-63ea-4ff5-a33e-ee7ffcef7d8c" >
+			<scheduling-strategy >
+				<fixed-frequency />
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="042272f4-20ec-41d9-8f0d-6ca8ccfa8ba9" message='#["helo"]'/>
+		<logger level="INFO" doc:name="Logger" doc:id="bd7dd293-9502-4a90-8917-c74c3070cc1b" />
+	</flow>
+</mule>
